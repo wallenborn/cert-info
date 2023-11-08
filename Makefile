@@ -5,6 +5,7 @@ all: certinfo.exe
 clean:
 	rm -f certinfo.exe
 	rm -f *~
+	rm -f .*~
 
 distclean: clean
 

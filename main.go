@@ -27,14 +27,14 @@ func main() {
 		fmt.Println("Could not parse certificate")
 	}
 
+	fmt.Println("Subject Name:        " + info.SubjectName(cert))
 	fmt.Println("Issuer Name:         " + info.IssuerName(cert))
-	fmt.Println("Issuer Name Hash:    " + info.IssuerNameHash(cert))
-	fmt.Println("Issuer Key Id:       " + info.IssuerKeyId(cert))
 	fmt.Println("Serial Number (dec): " + info.SerialNumber(cert))
 	fmt.Println("Serial Number (hex): " + info.SerialNumberAsHexString(cert))
-	fmt.Println("Subject Name:        " + info.SubjectName(cert))
-	fmt.Println("Subject Name Hash:   " + info.SubjectNameHash(cert))
-	fmt.Println("Subject Key Id:      " + info.SubjectKeyId(cert))
 	fmt.Println("Not Before:          " + info.NotBefore(cert))
 	fmt.Println("Not After:           " + info.NotAfter(cert))
+	fmt.Println("Subject Name Hash:   " + info.SubjectNameHash(cert))
+	fmt.Println("Subject Key Id:      " + info.SubjectKeyId(cert))
+	fmt.Println("Issuer Name Hash:    " + info.IssuerNameHash(cert))
+	fmt.Println("Issuer Key Id:       " + info.IssuerKeyId(cert))
 }

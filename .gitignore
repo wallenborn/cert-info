@@ -23,3 +23,7 @@ go.work
 # Emacs autosave files
 *~
 
+
+# VSCode files
+.vscode/
+
